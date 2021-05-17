@@ -1,9 +1,13 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/node_modules/font-awesome/css/font-awesome.min.css" />
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/node_modules/jdenticon/dist/jdenticon.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
             $("#locales").change(function () {
@@ -21,7 +25,7 @@
 <span th:text="#{lang.change}"></span>:
 <label for="locales"></label>
 <select id="locales">
-    <option value="" th:text=""></option>
+    <option value=""></option>
     <option value="en" th:text="#{lang.eng}"></option>
     <option value="ko" th:text="#{lang.ko}"></option>
 </select>
